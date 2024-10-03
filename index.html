@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
     <!-- Sätt SEO - tags -->
-     <link rel="stylesheet" href="/styles/_index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fd79ca7455.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/styles/_index.css" />
     <title>Responsive navigations</title>
-</head>
-<body>
+  </head>
+  <body>
+    <button class="burger" onclick="openNav()">
+      <i class="burger__icon fa-solid fa-bars"></i>
+    </button>
+    <!-- <button class="burger" id="menu-toggle" onclick="toggleIcon()"><i id="menu-icon" class="burger__icon fa-solid fa-bars"></i></button> -->
+    <nav class="nav" id="sid-bar">
+      <button class="xmark" onclick="closeNav()">
+        <i class="xmark__icon fa-regular fa-circle-xmark"></i>
+      </button>
 
-    <main class="main">
+      <ul class="nav__list">
+        <li class="nav__li"><a class="nav__link" href=""></a>IDA</li>
+        <li class="nav__li"><a class="nav__link" href=""></a>ABOUT</li>
+        <li class="nav__li"><a class="nav__link" href=""></a>PORTFOLIO</li>
+        <li class="nav__li"><a class="nav__link" href=""></a>CONTACT</li>
+      </ul>
+    </nav>
 
+    <main class="main" id="main">
+      <h1>HEJ</h1>
     </main>
-    
-</body>
+    <script src="/script.js"></script>
+  </body>
 </html>

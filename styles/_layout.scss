@@ -1,3 +1,6 @@
+@use "fonts";
+@use "colors";
+
 body {
   display: flex;
   flex-direction: column;
@@ -5,14 +8,33 @@ body {
   justify-content: flex-start;
   margin: 5px;
   border: green solid;
+  background-color: colors.$raisin-black;
+  height: 100vh;
 }
 
 .main {
-    position: relative;
-    top: 10px;
-    max-width: 1500px;
-    width: 100%;
-    min-height: 2110px;
-    height: 100%;
-    border: red solid;  
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  max-width: 1200px;
+  width: 100%;
+  min-height: 1110px;
+  height: 100%;
+  border: red solid;
+}
+
+/* Tablet*/
+@media screen and (max-width: 768px) {
+  main {
+    margin: 15px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 320px) {
+  main {
+    margin: 10px;
+  }
 }
