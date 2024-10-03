@@ -1,0 +1,76 @@
+@use "fonts";
+@use "colors";
+
+.nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: colors.$bitter-sweet;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  &__list {
+    padding-left: 20px;
+    list-style: none;
+    margin: 0;
+  }
+  &__li {
+    font-size: 30px;
+    color: colors.$anti-flash-white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    &:hover {
+      background-color: colors.$buff;
+    }
+  }
+  &__link {
+    padding: 8px 8px 8px 50px;
+    text-decoration: none;
+    color: colors.$anti-flash-white;
+    display: block;
+    transition: 0.3s;
+  }
+}
+
+main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sid-bar {
+    padding-top: 15px;
+  }
+}
+
+.burger {
+  background-color: colors.$raisin-black;
+  color: colors.$anti-flash-white;
+  font-size: 50px;
+  border: none;
+  &__icon {
+    cursor: pointer;
+  }
+}
+
+.xmark {
+  color: colors.$anti-flash-white;
+  font-size: 30px;
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  margin-left: 50px;
+  background-color: colors.$bitter-sweet;
+  border: none;
+  &__icon {
+    cursor: pointer;
+    &:hover {
+      background-color: colors.$bitter-sweet;
+      color: colors.$raisin-black;
+      opacity: 0.4;
+    }
+  }
+}
