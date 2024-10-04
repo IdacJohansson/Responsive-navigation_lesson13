@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Sätt SEO - tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Diffrent navigation styles for everybody!">
+    <meta property="og:description" content="Diffrent navigation styles for everybody!">
+    <meta property="twitter:description" content="Diffrent navigation styles for everybody!">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,25 +20,27 @@
     <title>Responsive navigations</title>
   </head>
   <body>
-    <button class="burger" onclick="openNav()">
-      <i class="burger__icon fa-solid fa-bars"></i>
-    </button>
-    <!-- <button class="burger" id="menu-toggle" onclick="toggleIcon()"><i id="menu-icon" class="burger__icon fa-solid fa-bars"></i></button> -->
     <nav class="nav" id="sid-bar">
       <button class="xmark" onclick="closeNav()">
         <i class="xmark__icon fa-regular fa-circle-xmark"></i>
       </button>
 
       <ul class="nav__list">
-        <li class="nav__li"><a class="nav__link" href=""></a>IDA</li>
-        <li class="nav__li"><a class="nav__link" href=""></a>ABOUT</li>
-        <li class="nav__li"><a class="nav__link" href=""></a>PORTFOLIO</li>
-        <li class="nav__li"><a class="nav__link" href=""></a>CONTACT</li>
+        <li class="nav__li">
+          <a class="nav__link" href="/pages/dropdown.html">IDA</a>
+        </li>
+        <li class="nav__li"><a class="nav__link" href="">ABOUT</a></li>
+        <li class="nav__li"><a class="nav__link" href="">PORTFOLIO</a></li>
+        <li class="nav__li"><a class="nav__link" href="">CONTACT</a></li>
       </ul>
     </nav>
 
     <main class="main" id="main">
       <h1>HEJ</h1>
+
+      <button class="burger" id="burger" onclick="openNav()">
+        <i class="burger__icon fa-solid fa-bars"></i>
+      </button>
     </main>
     <script src="/script.js"></script>
   </body>

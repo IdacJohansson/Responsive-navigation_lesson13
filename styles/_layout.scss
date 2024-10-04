@@ -7,26 +7,28 @@ body {
   align-items: center;
   justify-content: flex-start;
   margin: 5px;
-  border: green solid;
-  background-color: colors.$raisin-black;
   height: 100vh;
+  background-color: colors.$raisin-black;
+  font-family: fonts.$main-font;
 }
 
 .main {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   top: 10px;
   max-width: 1200px;
   width: 100%;
   min-height: 1110px;
-  height: 100%;
-  border: red solid;
 }
 
 /* Tablet*/
 @media screen and (max-width: 768px) {
+  body{
+    background-color: colors.$caribbean-current;
+  }
   main {
     margin: 15px;
   }
@@ -34,6 +36,9 @@ body {
 
 /* Mobile */
 @media screen and (max-width: 320px) {
+  body{
+    background-color: colors.$buff;
+  }
   main {
     margin: 10px;
   }

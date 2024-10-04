@@ -2,11 +2,9 @@
 @use "colors";
 
 @import "layout";
-@import "navigation";
+@import "sideNavigation";
 
-
-h1{
-    color: colors.$anti-flash-white;
-    font-size: 100px;
+h1 {
+  color: colors.$anti-flash-white;
+  font-size: 100px;
 }
-
