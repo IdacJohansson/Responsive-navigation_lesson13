@@ -1,1 +1,3 @@
-# Responsive-navigation_lesson13
+# Responsive-navigation
+
+A project to practise responsive navigations.
